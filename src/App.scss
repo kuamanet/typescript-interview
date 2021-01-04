@@ -1,3 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Squada+One');
+@import url("https://fonts.googleapis.com/css?family=Squada+One");
 
 // font-family: 'Squada One', sans-serif;
+
+.-text {
+  font-family: "Squada One";
+  font-size: 140px;
+  transform: rotate(-10deg);
+  transition: 0.3s ease;
+  transform-origin: top left;
+  padding: 20px 40px;
+
+  &.--animate {
+    transform: rotate(15deg);
+  }
+}
+.-grid {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 500px; // moneky patch to fix double animation on botto fo the page
+}
